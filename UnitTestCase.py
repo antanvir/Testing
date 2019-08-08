@@ -76,8 +76,8 @@ def testRobustly():
         variables, values = "", ""
         for j in range(NoOfVariables):
             if j == i//6:
-                variables += varName[j]+Labels[i % 4]+", "
-                values += str(sampleValues[j][i % 4])+", "
+                variables += varName[j]+Labels[i % 6]+", "
+                values += str(sampleValues[j][i % 6])+", "
             else:
                 variables += varName[j]+Labels[6]+","
                 values += str(sampleValues[j][6])+", "
