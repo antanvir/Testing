@@ -79,14 +79,12 @@ def testWorstCases():
         no = "[" + str(i + 1) + "]"
         variables, values = "", ""
         res = i
-        indices = []
         for j in range(NoOfVariables):
             index = res % 5
             if index == 4:
                 index += 2
             variables += varName[j] + Labels[index] + ", "
             values += str(sampleValues[j][index]) + ", "
-            indices.append(index)
             res = res // 5
         print(no, " ", variables.rstrip(", "), "\t\t", values.rstrip(", "))
 
